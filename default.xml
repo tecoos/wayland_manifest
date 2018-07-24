@@ -32,9 +32,17 @@
   <project path="wayland-ivi-extension"
            name="GENIVI/wayland-ivi-extension"
            revision="refs/tags/1.11.0"
-	   remote="github-https"/>
+           remote="github-https"/>
+
   <project path="libunwind"
            name="libunwind"
            revision="master"
            remote="gnu-git"/>
+
+  <project path="build"
+           name="tecoos/wayland_build"
+           revision="master"
+           remote="github-ssh">
+           <linkfile src="CMakeLists.txt" dest="CMakeLists.txt" />
+  </project>
 </manifest>
