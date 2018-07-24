@@ -16,8 +16,9 @@
 
 <!-- projects -->
   <project path="wayland"
-           name="wayland/wayland"
-           revision="refs/tags/1.14.0"/>
+           name="tecoos/wayland"
+           revision="refs/tags/1.14.0"
+           remote="github-ssh"/>
   <project path="wayland-protocols"
            name="wayland/wayland-protocols"/>
   <project path="mesa"
@@ -27,12 +28,13 @@
            name="wayland/libinput"
            revision="master"/>
   <project path="weston"
-           name="wayland/weston"
-           revision="refs/tags/1.11.0"/>
-  <project path="wayland-ivi-extension"
-           name="GENIVI/wayland-ivi-extension"
+           name="tecoos/weston"
            revision="refs/tags/1.11.0"
-           remote="github-https"/>
+           remote="github-ssh"/>
+  <project path="wayland-ivi-extension"
+           name="tecoos/wayland-ivi-extension"
+           revision="refs/tags/1.11.0"
+           remote="github-ssh"/>
 
   <project path="libunwind"
            name="libunwind"
