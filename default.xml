@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<!-- remotes -->
+  <remote  name="github-ssh"
+           fetch="ssh://git@github.com" />
+  <remote  name="github-https"
+           fetch="https://github.com" />
+  <remote  name="freedesktop-git"
+           fetch="git://anongit.freedesktop.org/" />
+  <remote  name="gnu-git"
+           fetch="git://git.sv.gnu.org/" />
+
+<!-- default values -->
+  <default revision="master"
+           remote="freedesktop-git" />
+
+<!-- projects -->
+  <project path="wayland"
+           name="wayland/wayland"
+           revision="refs/tags/1.14.0"/>
+  <project path="wayland-protocols"
+           name="wayland/wayland-protocols"/>
+  <project path="mesa"
+           name="mesa/mesa"
+           revision="master"/>
+  <project path="libinput"
+           name="wayland/libinput"
+           revision="master"/>
+  <project path="weston"
+           name="wayland/weston"
+           revision="refs/tags/1.11.0"/>
+  <project path="wayland-ivi-extension"
+           name="GENIVI/wayland-ivi-extension"
+           revision="refs/tags/1.11.0"
+	   remote="github-https"/>
+  <project path="libunwind"
+           name="libunwind"
+           revision="master"
+           remote="gnu-git"/>
+</manifest>
